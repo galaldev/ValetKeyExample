@@ -1,0 +1,40 @@
+﻿@page "/files"
+@using ValetKeyExample.Shared;
+@inject StorageService StorageService
+<h1>Valet Keys</h1>
+
+<p>Upload File: <InputFile OnChange="@Upload" /></p>
+<h2>Files</h2>
+@foreach(var file in _fileDtos)
+{
+    <p>
+        <a href="@file.Url">@file.Name</a>
+    </p>
+}
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadFiles();
+    }
+    private async Task Upload(InputFileChangeEventArgs e)
+    {
+        var key = await StorageService.GetPresiginedURL(e.File.Name);
+        Console.WriteLine(key);
+        var memoryStream = new MemoryStream();
+        await e.File.OpenReadStream().CopyToAsync(memoryStream);
+        await StorageService.UploadFile(key, memoryStream);
+        Console.WriteLine("Uploaded");
+        await StorageService.NotifyServer(e.File.Name);
+        Console.WriteLine("Server Notified");
+        await LoadFiles();
+    }
+
+    List<FileDto> _fileDtos = new();
+    private async Task LoadFiles()
+    {
+        _fileDtos = await StorageService.GetFiles() ?? new();
+    }
+
+}

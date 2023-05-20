@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValetKeyExample.Server", "ValetKeyExample\Server\ValetKeyExample.Server.csproj", "{D56E4F8A-60AB-42E5-9965-E3437F4B8829}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValetKeyExample.Client", "ValetKeyExample\Client\ValetKeyExample.Client.csproj", "{74079AB5-82C3-4730-B06D-C993DAECE4F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValetKeyExample.Shared", "ValetKeyExample\Shared\ValetKeyExample.Shared.csproj", "{FD850437-14B1-4352-A7EA-0403099574F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CED99BD8-270E-46BA-AA89-627E8D8FFD45}"
+	ProjectSection(SolutionItems) = preProject
+		ValetKey.pptx = ValetKey.pptx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D56E4F8A-60AB-42E5-9965-E3437F4B8829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56E4F8A-60AB-42E5-9965-E3437F4B8829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56E4F8A-60AB-42E5-9965-E3437F4B8829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56E4F8A-60AB-42E5-9965-E3437F4B8829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74079AB5-82C3-4730-B06D-C993DAECE4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74079AB5-82C3-4730-B06D-C993DAECE4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74079AB5-82C3-4730-B06D-C993DAECE4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74079AB5-82C3-4730-B06D-C993DAECE4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD850437-14B1-4352-A7EA-0403099574F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD850437-14B1-4352-A7EA-0403099574F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD850437-14B1-4352-A7EA-0403099574F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD850437-14B1-4352-A7EA-0403099574F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD69205D-C638-43EB-9524-4928DAE46250}
+	EndGlobalSection
+EndGlobal
